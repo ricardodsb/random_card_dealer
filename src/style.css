@@ -1,25 +1,28 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
 body {
   background-color: green;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 3%;
 }
 
 .card {
   background-color: white;
-  width: 25em;
-  height: 36em;
   border-radius: 5%;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding: 0 20px 0 20px;
+  width: 400px;
+  height: 600px;
 }
 
-.form {
+.symbol {
   font-size: 600%;
 }
 
@@ -29,5 +32,10 @@ body {
 }
 
 .card :nth-child(3) {
-  text-align: end;
+  text-align: left;
+  transform: rotate(-180deg);
+}
+
+.mybtn button {
+  margin-top: 20px;
 }
